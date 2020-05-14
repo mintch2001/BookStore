@@ -53,42 +53,6 @@ namespace BooksStore
                 mainMenu.Show();
                 this.Close();
             }
-        }
-
-        private void ClearLogin_Click(object sender, RoutedEventArgs e)
-        {
-            using (SqliteConnection dataBase = new SqliteConnection("Filename=StaffsData.db"))
-            {
-                dataBase.Open();
-                SqliteCommand command = new SqliteCommand("DELETE FROM StaffTable", dataBase);
-                command.ExecuteReader();
-                dataBase.Close();
-            }
-            MessageBox.Show("Clear staff data complete !","เเจ้งเตือน");
-        }
-
-        private void ClearCustomer_Click(object sender, RoutedEventArgs e)
-        {
-            using (SqliteConnection dataBase = new SqliteConnection("Filename=CustomersData.db"))
-            {
-                dataBase.Open();
-                SqliteCommand command = new SqliteCommand("DELETE FROM Customers", dataBase);
-                command.ExecuteReader();
-                dataBase.Close();
-            }
-            MessageBox.Show("Clear customers data complete !", "เเจ้งเตือน");
-        }
-
-        private void ClearBook_Click(object sender, RoutedEventArgs e)
-        {
-            using (SqliteConnection dataBase = new SqliteConnection("Filename=BooksData.db"))
-            {
-                dataBase.Open();
-                SqliteCommand command = new SqliteCommand("DELETE FROM BookDataTable", dataBase);
-                command.ExecuteReader();
-                dataBase.Close();
-            }
-            MessageBox.Show("Clear books data complete !", "เเจ้งเตือน");
-        }
+        }    
     }
 }

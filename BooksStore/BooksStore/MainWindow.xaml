@@ -31,9 +31,6 @@
             <PasswordBox x:Name="txtPassword" Grid.Row="2" Grid.Column="1" Width="320" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold" FontSize="15"/>
             <Button x:Name="LoginButton" Grid.Row="3" Grid.Column="1" Width="100" HorizontalAlignment="Left" Margin="78,0,0,60" Content="เข้าสู่ระบบ" Background="#FFE89505" Foreground="White" BorderBrush="{x:Null}" FontSize="15" FontWeight="Bold" FontFamily="Segoe UI" Click="LoginButton_Click"  />
             <Button x:Name="RegisterButton" Grid.Row="3" Grid.Column="1" Width="100" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="150,0,0,0" Content="สมัครสมาชิก" BorderBrush="{x:Null}" Foreground="White" Background="#FF1EADFF" FontWeight="Bold" FontSize="15" Click="RegisterButton_Click"/>
-            <Button x:Name="ClearLogin" Grid.Row="4" Grid.Column="2" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,0" Content="LoginClear" BorderBrush="{x:Null}" Foreground="White" Background="#FFFF1E1E" FontWeight="Bold" FontSize="15" Click="ClearLogin_Click"/>
-            <Button x:Name="ClearCustomer" Grid.Row="4" Grid.Column="2" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,100,0" Content="CTMClear" BorderBrush="{x:Null}" Foreground="White" Background="#FFFF8000" FontWeight="Bold" FontSize="15" Click="ClearCustomer_Click"/>
-            <Button x:Name="ClearBook" Grid.Row="4" Grid.Column="2" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,200,0" Content="BookClear" BorderBrush="{x:Null}" Foreground="White" Background="#FF003AFF" FontWeight="Bold" FontSize="15" Click="ClearBook_Click" />
         </Grid>
     </Grid>
 </Window>
