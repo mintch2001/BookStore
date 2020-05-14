@@ -1,0 +1,41 @@
+﻿<Window x:Class="BooksStore.CustomerChoiceForStaff"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BooksStore"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        Icon="/Image/LogoIcon.png"
+    Title="CompileHeart" Height="720" Width="500">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="จัดการข้อมูลลูกค้า" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50" Foreground="#FF535353"/>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="RegisterDataCustomers" Grid.Column="1" Grid.Row="1" Content="ลงทะเบียนข้อมูลลูกค้า" Foreground="White" BorderBrush="{x:Null}" Background="#FFE89505" FontSize="20" FontWeight="Bold" Click="RegisterDataCustomers_Click"/>
+            <Button x:Name="d" Grid.Column="1" Grid.Row="3" Content="จัดการข้อมูลลูกค้า" FontSize="20" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" Background="#FFE89505" Click="d_Click"/>
+        </Grid>
+    </Grid>
+</Window>

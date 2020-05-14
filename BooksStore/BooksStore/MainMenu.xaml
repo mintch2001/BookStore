@@ -1,0 +1,38 @@
+﻿<Window x:Class="BooksStore.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BooksStore"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        Icon="/Image/LogoIcon.png"
+        Title="CompileHeart" Height="720" Width="1280">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="ManageCustomersInformation" Grid.Column="1" Grid.Row="3" Content="จัดการข้อมูลลูกค้า" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" Background="#FFE89505" Click="ManageCustomersInformation_Click"/>
+            <Button x:Name="ManageBooksInformation" Grid.Column="3" Grid.Row="3" Content="จัดการข้อมูลหนังสือ" BorderBrush="{x:Null}" Foreground="White" Background="#FFE89505" FontSize="18" FontWeight="Bold" Click="ManageBooksInformation_Click"/>
+            <Button x:Name="BuysBook" Grid.Column="5" Grid.Row="3" Content="สั่งซื้อหนังสือ" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="White" Background="#FFF31919" Click="BuysBook_Click"/>
+        </Grid>
+    </Grid>
+</Window>
